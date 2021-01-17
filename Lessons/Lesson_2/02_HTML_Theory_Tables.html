@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_HTML_Tables</title>
+</head>
+<body>
+
+    <!-- table - это каркас таблицы 
+    далее идут строки (от аббревиатуры table rows), т.е. тег <tr>
+        тег ячеек - это тег <td>
+        есть еще тег <th> - это тейбл хэд-->
+
+    <table border="1" width = "300">
+        <caption>hello</caption>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2">1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+<br>
+<hr>
+    <table border="1" width = "300">
+        <caption>hello</caption>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+        <table border="1" width = "300">
+            <caption>hello</caption>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="2" rowspan="2">1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+            <table border="1" width = "300">
+                <caption>hello</caption>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td colspan="2" rowspan="2">1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    
+                </tr>
+            </table>
+
+            <br>
+            <hr>
+                <table border="1" width = "300">
+                    <caption>hello</caption>
+                    <tr>
+                        <td style="background-color: red;">1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="2" rowspan="2">1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        
+                    </tr>
+                </table>
+                
+                <br>
+                <hr>
+                    <table border="1" width = "300">
+                        <caption>hello</caption>
+                        <col style="background-color: lightyellow;">
+                        <col style="background-color: yellow;">
+                        <col style="background-color: red;">
+                        <tr>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td height ="50" align="right" valign = "bottom">1</td>
+                            <td>1</td>                            
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>                            
+                        </tr>
+                    </table>
+</body>
+</html>
