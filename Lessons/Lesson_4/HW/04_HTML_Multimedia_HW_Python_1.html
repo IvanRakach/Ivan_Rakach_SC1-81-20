@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04&#95;HTML&#95;HOW&#45;TO&#58;Программа на Python&#44; Часть 1</title>
+
+    <style>
+        .rightpicPython {
+            float: right; /* Выравнивание по правому краю */
+            margin: -95px 70px 5px 5px; /* Отступы вокруг картинки */
+        }
+        .prevbutton {
+            float: left;
+            margin: auto;
+        }        
+        .homebutton {
+            text-align: center;
+        }        
+        .nextbutton {
+            float: right;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+
+<a name="prevpage"></a>
+<h1 align="left" id="HOW_TO_1">HOW&#45;TO&#58; Программа на
+    <br>Python&#44; Часть 1</h1> 
+    <p><img src="Images/Icon-Python.png" alt="PLogo" title="Python's logotype" width="250" height="250" class="rightpicPython"></p>
+    
+
+
+<ul>
+    <li> <a href="#HOW_TO_1"><em>Программа на Python &mdash; часть 1</em></a></li> 
+    <li> <a href="04_HTML_Multimedia_HW_Python_2.html"><em>Программа на Python &mdash; часть 2</em></a></li>
+    <li> <a href="04_HTML_Multimedia_HW_Python_3.html"><em>Программа на Python &mdash; часть 3</em></a></li>
+</ul>
+
+<h2 align="left" id="Table_of_contents_p_1">Содержание</h2>
+
+<h3 align="left">HOW&#45;TO&#58; Программа на Python&#44; Часть 1</h3>
+
+<ul>
+    <li> <a href="#1st_pr-m">Наша первая программа</a></li> 
+    <li> <a href="#For">Пример цикла For</a></li> 
+</ul>
+
+<p>Из множества существующих языков программирования Python &mdash; один из самых лёгких
+    <br>в изучении&#46; Он создан в конце 80-х годов XX века&#44; но с тех пор он сильно изменился&#46;
+    <br>Хотя Python входит в состав большинства дистрибутивов Linux&#44; на него часто не
+    <br>обращают внимания при выборе языка для изучения&#46; В этой статье мы рассмотрим
+    <br>создание консольных приложений&#44; а в следующей &mdash; программирование графических
+    <br>интерфейсов &#40;<ins>GUI</ins>&#41;&#46; Давайте создадим простую программу прямо сейчас&#46;
+</p>
+
+<h2 align="left" id="1st_pr-m">Наша первая программа</h2>
+
+<a name="homepage_1"></a>
+<p><a href="#Table_of_contents_p_1">К содержанию</a></p>
+
+<p>Наберём код в текстовом редакторе &#40;например&#44; в <strong>gedit</strong>&#41;&#46; Потом мы разберёмся&#44; что делает
+    <br>каждая строка и пойдём дальше&#46;
+</p>
+
+<p>Введите эти 4 строки&#58;
+    <br>
+    <br>
+</p>
+<p><code>#!/usr/bin/env python
+    <br>print 'Hello. I am a python program.'
+    <br>name = raw_input("What is your name?")
+    <br>print "Hello there, " + name + "!"
+</code></p>
+
+<p>Это всё&#46; Сохраните файл как <span> <strong>hello&#46;py</strong> </span> в любом месте&#46; Я предлагаю сохранить его в папке
+    <br><span> <strong>python&#95;examples</strong> </span> в домашнем каталоге&#46; Этот пример показывает&#44; как просто написать
+    <br>программу на Python&#46; Для запуска программы нужно сделать её файл исполняемым&#46; Для
+    <br>этого введите в терминале
+</p>
+<p><code>chmod +x hello.ру</code></p>
+<p>в папке&#44; в которой вы сохранили программу&#46; Теперь запустите её&#46;</p>
+
+<p><code>
+    <br>greg@earth:~/python_examples$ ./hello.py
+    <br>Hello. I am a python program.
+    <br>What is your name? Ferd Burphel
+    <br>Hello there, Ferd Burphel!
+    <br>greg@earth:~/python_examples$
+</code></p>
+
+<p class="homebutton"> 
+    <a href=""><img src="Images/prev.png" alt="Prev" title="Prev" align="left" width="21.5" height="21.5"> </a>
+    <a href="#homepage_1"><img src="Images/home.png" alt="Home" title="Home"  width="21.5" height="21.5"> </a>
+    <a href="#nextpage"><img src="Images/next.png" alt="next" title="next" class="nextbutton" width="21.5" height="21.5"> </a>
+</p>
+<!-- align="center" - Почему не работает? -->
+<br>
+
+<a name="nextpage"></a>
+<p>Вот и всё&#46;</p>
+
+<h2 align="left" id="For">Пример цикла For</h2>
+
+<a name="homepage_2"></a>
+<p><a href="#Table_of_contents_p_1">К содержанию</a></p>
+
+<p>Теперь давайте рассмотрим пример программирования цикла&#46; Запустите текстовый
+    <br>редактор и наберите следующую программу&#58;
+</p>
+<br>
+<p> <pre>
+#!/usr/bin/env python
+for cntr in range(0,10):
+    print cntr
+</pre>
+</p>
+
+<p><span><em>Не забудьте поставить символ табуляции перед строкой &#171;print cntr&#187;&#46;</em></span> Это важно&#46; В
+    <br>Python для указания на блоки кода используются не круглые &#171;&#40;&#187; и фигурные &#171;&#123;&#187; скобки
+    <br>как в других языках программирования&#44; а отступы&#46;
+</p>
+
+<p class="homebutton"> 
+    <a href="#prevpage"> <img src="Images/prev.png" alt="Prev" title="Prev" align="left" width="21.5" height="21.5"> </a>
+    <a href="#homepage_2"><img src="Images/home.png" alt="Home" title="Home"  width="21.5" height="21.5"> </a>
+    <a href=""><img src="Images/next.png" alt="next" title="next" class="nextbutton" width="21.5" height="21.5"> </a>
+</p>
+
+</body>
+</html>
