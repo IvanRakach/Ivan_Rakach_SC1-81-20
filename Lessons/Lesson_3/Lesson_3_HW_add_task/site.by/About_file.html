@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test site</title>
+
+    <style>
+        td.ltb {border-left-style: none;}
+        td.rtb {border-right-style: none;}
+        td.lftpad {padding: 0px 2px 2px 6px;}        
+    </style>
+
+</head>
+<body>
+
+<!-- td.lftmargn задаем, чтобы значение распространилось только на 2 таблицу -->
+<a name="About_file_index"></a>
+<h2>Горизонтальное меню - About_file</h2>    
+
+<!-- Вариант 1 -->
+<p> <a href="Index.html"> Главная</a> &#124; <a href="Catalog_file.html"> Каталог</a> &#124; <a href="Promo_file.html"> Акции</a> &#124; <a href="#About_file_index"> О нас</a></p>
+
+<!-- border-collapse: collapse - убираем пустые промежутки между ячейками -->
+<!-- border: 0px solid black - устанавливаем для таблицы внешнюю границу черного цвета толщиной 0px -->
+<!-- Не работает тег <valign>; http://htmlbook.ru/html/td/valign -->
+<!-- Лучше использовать таблицу? ее ведь потом будет проще перемещать по странице или нет? -->
+<!-- лучше использовать <p> или <div> ? -->
+
+<!-- Вариант 2 -->
+<table border="1" 
+       width = "300"
+       style="border-collapse: collapse;
+       border: 0px solid black;
+       border-top: white;
+       border-bottom: white;">
+    
+    <tr>
+        <td class="ltb" align="center">Главная</td>
+        <td align="center">Каталог</td>
+        <td align="center">Акции</td>
+        <td class="rtb" align="center">О нас</td>
+    </tr>
+</table>
+
+<br>
+
+<h2>Меню список</h2>   
+
+<ul>
+    <li>Главная</li>
+    <li>Каталог</li>
+    <li>Акции</li>
+    <li>О нас</li>
+</ul>
+
+<br>
+
+<h2>Меню с вложенным списком</h2>
+
+<ul>
+    <li>Главная
+        <ul>
+            <li>Новости</li>
+        </ul>
+    </li>
+
+    <li>Каталог
+        <ul>
+            <li>Осень-Зима</li>
+            <li>Весна-Лето</li>
+        </ul>
+    </li>
+
+    <li>Акции
+        <ul>
+            <li>Актуальные</li>
+            <li>Прошедшие</li>
+        </ul>
+    </li>
+
+    <li>О нас
+        <ul>
+            <li>Контакты</li>
+            <li>Проезд</li>
+        </ul>
+    </li>
+</ul>
+
+
+<br>
+
+<h2>Меню таблица с вложенными таблицами</h2>
+
+<table>
+    <tr>
+        <td>Главная</td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="lftpad">Новости</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Каталог</td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="lftpad">    Осень-Зима
+                        <br>Весна-Лето
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Акции</td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="lftpad">    Актуальные
+                        <br>Прошедшие
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>О нас</td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="lftpad">    Контакты
+                        <br>Проезд
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+</table>
+
+</body>
+</html>

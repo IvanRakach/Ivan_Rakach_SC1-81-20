@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test site</title>
+
+    <style>
+        td.ltb {border-left-style: none;}
+        td.rtb {border-right-style: none;}
+        td.lftpad {padding: 0px 2px 2px 6px;}        
+    </style>
+
+</head>
+<body>
+
+<!-- td.lftmargn задаем, чтобы значение распространилось только на 2 таблицу -->
+
+<h2 id="index">Горизонтальное меню - Главная страница</h2>    
+
+<!-- Вариант 1 -->
+<p> <a href="#index"> Главная</a> &#124; <a href="Catalog_file.html"> Каталог</a> &#124; <a href="Promo_file.html"> Акции</a> &#124; <a href="About_file.html"> О нас</a></p>
+
+<!-- border-collapse: collapse - убираем пустые промежутки между ячейками -->
+<!-- border: 0px solid black - устанавливаем для таблицы внешнюю границу черного цвета толщиной 0px -->
+<!-- Не работает тег <valign>; http://htmlbook.ru/html/td/valign -->
+<!-- Лучше использовать таблицу? ее ведь потом будет проще перемещать по странице или нет? -->
+<!-- лучше использовать <p> или <div> ? -->
+
+<!-- Вариант 2 -->
+<table border="1" 
+       width = "300"
+       style="border-collapse: collapse;
+       border: 0px solid black;
+       border-top: white;
+       border-bottom: white;">
+    
+    <tr>
+        <td class="ltb" align="center">Главная</td>
+        <td align="center">Каталог</td>
+        <td align="center">Акции</td>
+        <td class="rtb" align="center">О нас</td>
+    </tr>
+</table>
+
+<br>
+
+<h2>Меню список</h2>   
+
+<ul>
+    <li> <a href="#index"> Главная</a> </li>
+    <li> <a href="Catalog_file.html"> Каталог</a> </li>
+    <li> <a href="Promo_file.html"> Акции</a> </li>
+    <li> <a href="About_file.html"> О нас</a> </li>
+</ul>
+
+<br>
+
+<h2>Меню с вложенным списком</h2>
+
+<ul>
+    <li><a href="#index"> Главная</a>
+        <ul>
+            <li> <a href="News/News.html"> Новости</a></li>
+        </ul>
+    </li>
+
+    <li><a href="Catalog_file.html"> Каталог</a>
+        <ul>
+            <li> <a href="Catalog/A_W.html"> Осень-Зима</a></li>
+            <li> <a href="Catalog/S_S.html"> Весна-Лето</a></li>
+        </ul>
+    </li>
+
+    <li><a href="Promo_file.html"> Акции</a>
+        <ul>
+            <li><a href="Promo/Last.html">Актуальные</a></li>
+            <li><a href="Promo/Old.html">Прошедшие</a></li>
+        </ul>
+    </li>
+
+    <li><a href="About_file.html"> О нас</a>
+        <ul>
+            <li> <a href="About/Contacts.html"> Контакты</a></li>
+            <li> <a href="About/Scheme.html"> Проезд</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+<br>
+
+<h2>Меню таблица с вложенными таблицами</h2>
+
+<table>
+    <tr>
+        <td><a href="#index"> Главная</a></td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="lftpad"> <a href="News/News.html"> Новости</a></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="Catalog_file.html"> Каталог</a></td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="lftpad"><a href="Catalog/A_W.html"> Осень-Зима</a>
+                        <br><a href="Catalog/S_S.html"> Весна-Лето</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="Promo_file.html"> Акции</a></td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="lftpad"> <a href="Promo/Last.html">Актуальные</a>    
+                        <br> <a href="Promo/Old.html">Прошедшие</a> 
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><a href="About_file.html"> О нас</a></td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="lftpad"><a href="About/Contacts.html"> Контакты</a>
+                        <br><a href="About/Scheme.html"> Проезд</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>   
+</table>
+
+</body>
+</html>
