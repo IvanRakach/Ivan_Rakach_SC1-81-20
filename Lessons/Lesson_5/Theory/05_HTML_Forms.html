@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Обработчик нам нужно будет самим создавать, он покупается или его содают парни из Back-End?-->
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+    
+        <!-- fieldset - "Рамка пользователя, обертка" например ФИО, адрес, супруга, т.е. анкетные данные -->
+        <!-- input type text - поле ввода-->
+        <!-- если есть необходимость активации каждого поля (обертки), то нужно сделать несколько форм -->
+
+    <fieldset>
+        <legend>Test</legend>
+        <input type="text">
+    </fieldset>
+    <fieldset>
+        <legend>Test</legend>
+        <input type="text">
+    </fieldset>
+    <fieldset>
+        <legend>Test</legend>
+        <input type="text">
+    </fieldset>   
+
+    <br><input type="submit">
+    
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+    
+    <fieldset>
+        <legend>Test</legend>
+        <label>
+            Your name:
+            <input type="text">
+        </label>
+        
+    </fieldset>
+
+    <br><input type="submit">
+    
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+    
+        <fieldset>
+            <legend>Test</legend>
+            <label for="test_id">
+                Your name:
+                
+            </label>
+            
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <br>when an unknown printer took a galley of type and scrambled it to make a type
+                <br>specimen book. It has survived not only five centuries, but also the leap into
+                <br>electronic typesetting, remaining essentially unchanged. It was popularised in
+                <br>the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                <br>and more recently with desktop publishing software like Aldus PageMaker including
+                <br>versions of Lorem Ipsum.
+            </p>
+
+            <input type="text" id="test_id">
+
+        </fieldset>
+    
+        <br><input type="submit">
+        
+        </form>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+    
+        <fieldset>
+            <legend>Test</legend>
+            <label for="test_id">
+                Your name:
+                
+            </label>
+            
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <br>when an unknown printer took a galley of type and scrambled it to make a type
+                <br>specimen book. It has survived not only five centuries, but also the leap into
+                <br>electronic typesetting, remaining essentially unchanged. It was popularised in
+                <br>the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                <br>and more recently with desktop publishing software like Aldus PageMaker including
+                <br>versions of Lorem Ipsum.
+            </p>
+
+            <!-- Задаем порядок табуляции на сайте, т.е. в какой последовательности будут выделяться поля для ввода,
+                если нам требуется ввод не по порядку -->
+
+            <input type="text" tabindex="7">
+            <input type="text" tabindex="6">
+            <input type="text" tabindex="5">
+            <input type="text" tabindex="4">
+            <input type="text" tabindex="3">
+            <input type="text" tabindex="2">
+            <input type="text" tabindex="1">
+
+        </fieldset>
+    
+        <br><input type="submit">
+        
+        </form>
+
+
+        <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+    
+        <fieldset>
+            <legend>Test</legend>
+            <label for="test_id">
+                Your name:
+                
+            </label>
+            
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <br>when an unknown printer took a galley of type and scrambled it to make a type
+                <br>specimen book. It has survived not only five centuries, but also the leap into
+                <br>electronic typesetting, remaining essentially unchanged. It was popularised in
+                <br>the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                <br>and more recently with desktop publishing software like Aldus PageMaker including
+                <br>versions of Lorem Ipsum.
+            </p>
+
+            <!-- Задаем порядок табуляции на сайте, т.е. в какой последовательности будут выделяться поля для ввода,
+                если нам требуется ввод не по порядку -->
+
+            <input type="text" >
+            <input type="text" >
+            <input type="text" autofocus>
+            <input type="text" >
+            <input type="text" >
+            <input type="text" >
+            <input type="text" >
+
+        </fieldset>
+
+        <fieldset>
+            <legend>checkbox1</legend>
+            <input type="checkbox" name="check_1">
+            <input type="checkbox" name="check_2">  
+            <input type="checkbox" name="check_3">  
+            <input type="checkbox" name="check_4">  
+            <input type="checkbox" name="check_5">  
+            <input type="checkbox" name="check_6">  
+            <input type="checkbox" name="check_7">              
+        </fieldset>
+
+        <fieldset>
+            <!-- Данный вариант предоставления информации на сервер гораздо удобнее для back-end разработчиков -->
+            <legend>checkbox2</legend>
+            <input type="checkbox" name="check[]" value="check_1">
+            <input type="checkbox" name="check[]" value="check_2">  
+            <input type="checkbox" name="check[]" value="check_3">  
+            <input type="checkbox" name="check[]" value="check_4">  
+            <input type="checkbox" name="check[]" value="check_5">  
+            <input type="checkbox" name="check[]" value="check_6">  
+            <input type="checkbox" name="check[]" value="check_7">              
+        </fieldset>
+
+        <fieldset>
+            <!-- Данный вариант предоставления информации на сервер гораздо удобнее для back-end разработчиков -->
+            <legend>radio</legend>
+            <input type="radio" name="radio1" value="radio_1">
+            <input type="radio" name="radio1" value="radio_2">  
+            <input type="radio" name="radio1" value="radio_3">  
+            <input type="radio" name="radio1" value="radio_4">  
+            <input type="radio" name="radio1" value="radio_5">  
+            <input type="radio" name="radio1" value="radio_6">  
+            <input type="radio" name="radio1" value="radio_7">
+            
+            <br>
+            <input type="radio" name="radio2" value="radio_1">
+            <input type="radio" name="radio2" value="radio_2">  
+            <input type="radio" name="radio2" value="radio_3">  
+            <input type="radio" name="radio2" value="radio_4">  
+            <input type="radio" name="radio2" value="radio_5">  
+            <input type="radio" name="radio2" value="radio_6">  
+            <input type="radio" name="radio2" value="radio_7">   
+        </fieldset>
+
+        <fieldset>
+            <!-- Вариант валидации на уровне браузера (пропускает такой формат, пример: "12345@tut" , т.е. без ".by") -->
+            <!-- чтобы осуществить корректную валидацию, то нужно прописать "РЕГУЛЯРНЫЕ ВЫРАЖЕНИЯ" + "ЭКРАНИРОВКА" -->
+            <legend>Email</legend>
+            <input type="email" name="Email">              
+        </fieldset>
+
+        <fieldset>
+            <legend>File</legend>
+            <input type="file" name="file">              
+        </fieldset>
+
+        <fieldset>
+            <legend>text_area_for_comments</legend>
+            <textarea name="comment" cols="30" rows="10"></textarea>             
+        </fieldset>
+
+        <fieldset>
+            <legend>select</legend>
+            <!-- каждый выпадающий элемент прописывается через option -->
+            <!-- 1 вариант выпадающего списка -->
+            <select name="select1">
+                <option value="sel1">sel1</option>
+                <option value="sel2">sel2</option>
+                <option value="sel3">sel3</option>
+                <option value="sel4">sel4</option>
+                <option value="sel5">sel5</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>select</legend>
+            <!-- каждый выпадающий элемент прописывается через option -->
+            <!-- 2 вариант выпадающего списка через атрибут size, т.е. мы можем указать: сколько элементов мы хотим отобразить-->
+            <select name="select2" size="3">
+                <option value="sel1">sel1</option>
+                <option value="sel2">sel2</option>
+                <option value="sel3">sel3</option>
+                <option value="sel4">sel4</option>
+                <option value="sel5">sel5</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>select</legend>
+            <!-- каждый выпадающий элемент прописывается через option -->
+            <!-- 3 вариант выпадающего списка через атрибут size, т.е. мы можем указать: сколько элементов мы хотим отобразить-->
+            <!-- можем выбирать несколько элементов в выпадающем списке через атрибут multiple-->
+            <select name="select3" size="3" multiple>
+                <option value="sel1">sel1</option>
+                <option value="sel2">sel2</option>
+                <option value="sel3">sel3</option>
+                <option value="sel4">sel4</option>
+                <option value="sel5">sel5</option>
+            </select>
+        </fieldset>
+            
+        <br><input type="submit">
+        
+        </form>
+
+    
+</body>
+</html>
